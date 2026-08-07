@@ -132,11 +132,11 @@ Use Postman to test the REST endpoints.
 Example:
 
 ```
-GET http://localhost:8081/author/getAuthors
+GET http://localhost:2222/author/getAuthors
 
-GET http://localhost:8082/book/getBooks
+GET http://localhost:3333/book/getBooks
 
-GET http://localhost:8083/...
+GET http://localhost:4444/...
 ```
 
 ---
