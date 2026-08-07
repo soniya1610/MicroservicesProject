@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Incapp Book App</h1>
+	<hr>
+	<a href='/'>Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<hr>
+	<p th:if='${msg}' th:text='${msg}' style="background-color: yellow;padding: 10px"></p>
+	<h2>Search by Book- Name</h2>
+	<form action="SearchBook" method="post">
+		<label>Name:</label>
+		<input type="text" name="name" required />
+		<br><br>
+		<button>Submit</button>
+	</form>
+	<div th:if='${book}' style="background-color: yellow;padding: 10px; width:200px;">
+		<p>ID: <b th:text='${book.id}'></b> <p>
+		<p>Name: <b th:text='${book.name}'></b> <p>
+		<p>Price: <b th:text='${book.price}'></b> <p>
+		<p>Author ID: <b th:text='${book.author.id}'></b> <p>
+		<p>Author Name: <b th:text='${book.author.name}'></b> <p>
+		<p>Author Age: <b th:text='${book.author.age}'></b> <p>
+	</div>
+</body>
+</html>
