@@ -28,24 +28,7 @@ public class BookAppController{
 			m.addAttribute("book", b);
 		}
 		return "index";
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}  
 //	@PostMapping("/SearchBook2")
 //	public String searchBook2(@RequestParam String aname, Model m) {
 //		List<Book> b=bookRepo.findAllByAname(aname);
